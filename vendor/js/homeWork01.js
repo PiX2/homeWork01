@@ -43,4 +43,28 @@ var jourPlat = plats[i];
 console.log("On va se régaler !");
 
 
+// Exercices 4 - Températures min/max/moyenne
+var templist = [10, 20, 30, 5, 10, 36];
+
+var posList = 1;
+var min = 100;
+var max = 0;
+var moyenne = 0;
+var listLength = templist.length;
+
+while(posList <= templist.length){
+	if(templist[posList] > max){
+		var max = templist[posList];
+	}
+	else if(templist[posList] < min){
+		var min = templist[posList];
+	}
+  posList++;
+  var moyenne = templist[posList];
+}
+console.log("La température la plus élévée est " + max);
+console.log("La température la plus petite est " + min);
+console.log("La température moyenne est " + moyenne / listLength);
+
+
 // --- !!! END SCRIPT !!! ---
