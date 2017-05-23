@@ -1,5 +1,5 @@
 /*
- * Home Work 0.1
+ * Home Work 0.1.1
  * Polleunus Philippe
  * CEPEGRA
  * Released on: Mai 23, 2017
@@ -10,10 +10,11 @@
 ========================== */
 
 // Exercices 1 - Générateur d'insultes
-var firstList = ["Vielle", "moche", "ridée"];
+var firstList = ["vielle", "moche", "ridée"];
 var secondList =["chausette", "banane", "cruche"];
 var turtList = ["molle", "pourri", "crever"];
 var ramdomFunct = getRandomNumber(3);
+
 console.log("Espece de " + firstList[ramdomFunct] + " " + secondList[ramdomFunct] + " " + turtList[ramdomFunct]);
 
 
@@ -36,8 +37,8 @@ console.log("C'est fini pour aujourd'hui !");
 var plats = ["Cannellonis farcis épinards ricotta", "Burger végétarien, pommes de terre et salade", "Chili sin carne", "Carpaccio de légumes et purée de lentilles", "Taboulé libanais et falafels"];
 
 console.log("Cette semaine on va manger...");
-for(i = 0; i <=4; i++){
-var jourPlat = plats[i];
+for(i = 0; i <= plats.length; i++){
+	var jourPlat = plats[i];
     console.log(jourPlat);
 }
 console.log("On va se régaler !");
@@ -65,6 +66,5 @@ while(posList <= templist.length){
 console.log("La température la plus élévée est " + max);
 console.log("La température la plus petite est " + min);
 console.log("La température moyenne est " + moyenne / listLength);
-
 
 // --- !!! END SCRIPT !!! ---
